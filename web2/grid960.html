@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그리드 960</title>
+    <style>
+    * { margin:0; padding: 0; }
+    body, html { width: 100%;}
+    ul { list-style: none; }
+    a { text-decoration: none; }
+    .page { clear:both; width: 100%; }    
+    .page_tit { padding-top: 50px; text-align: center; }
+    .pro_tit { padding-left: 14px; padding-top: 14px; }
+    .pro_com { padding: 14px; }
+        
+    /* 거터가 없는 경우 - 동적 단위(%) */
+    .row1 { width: 960px; margin: 0 auto; padding-top: 60px; }
+        
+    .row1 li { float:left; }
+    .row1 .col1 { width: 8.33333%; }
+    .row1 .col2 { width: 16.66667%; }
+    .row1 .col3 { width: 25%; }
+    .row1 .col4 { width: 33.33333%; }
+    .row1 .col5 { width: 41.66667%; }
+    .row1 .col6 { width: 50; }
+    .row1 .col7 { width: 58.33333%; }
+    .row1 .col8 { width: 66.66667%; }
+    .row1 .col9 { width: 75%; }
+    .row1 .col10 { width: 83.33333%; }
+    .row1 .col11 { width: 91.66667%; }
+    .row1 .col12 { width: 100%; }
+    .row1 li a { display:block; }
+    .row li a img { display:block; width: 100%; height:auto; }
+        
+    /* 거터가 없는 경우 - 정적 단위(px) */
+    .row2 { clear:both; width: 960px; margin: 0 auto; padding-top: 60px; }
+    .row2 li { float:left; }
+    .row2 .col1 { width: 80px; }
+    .row2 .col2 { width: 160px; }
+    .row2 .col3 { width: 240px; }
+    .row2 .col4 { width: 320px; }
+    .row2 .col5 { width: 400px; }
+    .row2 .col6 { width: 480px; }
+    .row2 .col7 { width: 560px; }
+    .row2 .col8 { width: 640px; }
+    .row2 .col9 { width: 720px; }
+    .row2 .col10 { width: 800px; }
+    .row2 .col11 { width: 880px; }
+    .row2 .col12 { width: 960px; }
+    .row2 li a { display:block; }
+    .row2 li a img { display:block; width: 100%; height:auto; }
+        
+    /* 거터가 있는 경우 - 동적 단위(%) */
+    .row3 { clear:both; width: 960px; margin: 0 auto; padding-top: 60px; }
+    .row3 li { float:left; margin-right: 2%; }
+    .row3 li:nth-child(4n) { margin-right: 0; }
+    .row3 .col1 { width: 6.5%; }
+    .row3 .col2 { width: 15%; }
+    .row3 .col3 { width: 23.5%; }
+    .row3 .col4 { width: 32%; }
+    .row3 .col5 { width: 40.5%; }
+    .row3 .col6 { width: 49%; }
+    .row3 .col7 { width: 57.5%; }
+    .row3 .col8 { width: 66%; }
+    .row3 .col9 { width: 74.5%; }
+    .row3 .col10 { width: 83%; }
+    .row3 .col11 { width: 91.5%; }
+    .row3 .col12 { width: 100%; }
+    .row3 li a { display:block; }
+    .row3 li a img { display:block; width: 100%; height:auto; }
+        
+    /* 거터가 있는 겨우 - 정적 단위(px) */
+    .row4 { clear:both; width: 1180px; margin: 0 auto; padding-top: 60px; }
+    .row4 li { float:left; margin-right: 20px; }
+    .row4 li:nth-child(4n) { margin-right: 0; }
+    .row4 .col1 { width: 80px; }
+    .row4 .col2 { width: 180px; }
+    .row4 .col3 { width: 280px; }
+    .row4 .col4 { width: 380px; }
+    .row4 .col5 { width: 480px; }
+    .row4 .col6 { width: 580px; }
+    .row4 .col7 { width: 680px; }
+    .row4 .col8 { width: 780px; }
+    .row4 .col9 { width: 880px; }
+    .row4 .col10 { width: 980px; }
+    .row4 .col11 { width: 1080px; }
+    .row4 .col12 { width: 1180px; }
+    .row4 li a { display:block; }
+    .row4 li a img { display:block; width: 100%; height:auto; }
+    </style>
+</head>
+<body>
+    <div class="page" id="page1">
+        <h2 class="page_tit">거터가 없는 경우 - 동적 단위(%)</h2>
+        <ul class="row1">
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X160/333" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+        </ul>
+    </div>
+    <div class="page" id="page2">
+        <h2 class="page_tit">거터가 없는 경우 - 정적 단위(px)</h2>
+        <ul class="row2">
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/2c8" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+        </ul>
+    </div>
+    <div class="page" id="page3">
+        <h2 class="page_tit">거터가 있는 경우 - 동적 단위(%)</h2>
+        <ul class="row3">
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                   <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/240X180/c28" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+        </ul>
+    </div>
+    <div class="page" id="page4">
+        <ul class="row4">
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+            <li class="col3"><a href="">
+                    <img src="http://placehold.it/200x160/82c" alt="">
+                    <h3 class="pro_tit">상품제목</h3>
+                    <p class="pro_com">상품설명입니다. 여기는 상품에 대한 설명으로 자세한 상품의 내용과 가격, 특징, 형태 등을 기술합니다.</p>
+                </a></li>
+        </ul>
+    </div>
+</body>
+</html>
