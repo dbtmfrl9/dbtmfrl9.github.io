@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.left_quick {
+    position: fixed;
+    left: 20px;
+    top: 38%;
+    z-index: 999;
+}
+
+.left_quick button {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.left_quick button span {
+    display: block;
+    text-indent: -9999px;
+    width: 5px;
+    height: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.left_quick button span.on {
+    background-color: #bbb;
+}
+.left_quick button.on span {
+    background-color: #fff;
+}
+.left_quick button.on span.on {
+    background-color: #333;
+}
+.left_quick button:before {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 37px;
+    border-radius: 22px;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left_quick button.on:before {
+    border: 2px solid #fff;
+}
+.left_quick.on button.on:before {
+    border: 2px solid #333;
+}
