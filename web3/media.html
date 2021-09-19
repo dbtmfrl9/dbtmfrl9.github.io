@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    * { margin: 0; padding: 0; }
+    html, body { width: 100%; }
+    ul { list-style:none; }
+    a { text-decoration: none; }
+    .wrap { width: 100%; clear:both; min-height: 100vh; }
+    .clr:after { content:"", display:block; clear:both; }
+    </style>
+    <!-- 반응형, 모자일형, 태블릿형, 스마트와치형 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>반응형</title>
+    <style>
+    .lst { width: 100%; clear:both; margin: 0 auto; overflow:auto; }
+    @media screen and (max-width:767px) { /* 모바일 */ 
+        .wrap { background-color: deeppink; }
+        .lst { width: 320px; }
+        .lst li { clear:both; float:none; margin-top: 20px; margin-bottom: 20px; }
+    }
+    @media screen and (min-width:768px) and (max-width:959px){
+        .wrap { background-color: deepskyblue; }
+        .lst { width: 640px; }
+        .lst li { float:left; clear:none; }
+    }
+    @media screen and (min-width:960px) {
+        .wrap { background-color: gold; }
+        .lst { width: 1280px; }
+        .lst li { float:left; clear:none; }
+    }
+    @media print {
+        .wrap { background-color: transparent; }        
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap clr">
+        <ul class="lst clr">
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+            <li><a href=""><img src="http://placehold.it/320x240/c28" alt="">
+                <h3 class="tit">여기는 제목</h3>
+            </a></li>
+        </ul>
+    </div>
+</body>
+</html>
