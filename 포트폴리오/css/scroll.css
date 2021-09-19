@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+#menu {
+    position: fixed;
+    top: 40%;
+    left: 1%;
+    z-index:10;
+}
+#menu li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    margin: 14px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#menu li:hover a, #menu li.on a {
+    background: #471baf;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+section:nth-child(1) {
+    background: #fff;
+}
+section:nth-child(2) {
+    background: #fff;
+}
+section:nth-child(3) {
+    background: #fff;
+    overflow: hidden;
+}
+section:nth-child(4) {
+    background: fff;
+}
+section:nth-child(5) {
+    background: #fff;
+}
+section:nth-child(6) {
+    background: #fff;
+}
+section:nth-child(7) {
+    background: #fff;
+}
