@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 메타 정보 -->
+    <title>샤넬 주얼리(CHANEL)</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="All">
+    <meta name="title" content="영원히 함께 할 운명적인 만남 | 샤넬 공식 웹사이트">
+    <meta name="description" content="샤넬의 세계에 들어오셔서 액세서리, 뷰티, 화인 주얼리에 관한 가장 최신 뉴스를 만나보세요.">
+    <meta name="keywords" content="COCO CRUSH, CAMÉLIA, ULTRA, RUBAN, CHANEL">
+    
+    <!-- 바로가기 아이콘 -->
+    <link rel="shortcut icon" href="./img/favicon16.png" sizes="16x16">
+	<link rel="apple-touch-icon" href="./img/favicon96.png" sizes="96x96">
+	<link rel="icon" href="./img/favicon192.png" sizes="192x192">
+    
+    <!-- 오픈그래프 -->
+    <meta property="og:type" content="영원히 함께 할 운명적인 만남 | 샤넬 공식 웹사이트">
+    <meta property="og:descviption" content="샤넬의 세계에 들어오셔서 액세서리, 뷰티, 화인 주얼리에 관한 가장 최신 뉴스를 만나보세요.">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="샤넬 주얼리">
+    <meta property="og:image" content="./img/">
+    
+    <!-- 폰트 파일 임포트(link 태그) -->
+    <link rel="stylesheet" href="font.css">
+    
+    <!-- html5shiv.js 연결 -->
+    <!-- [if lt ie 9]>
+        <script src="html5shiv.js"></script>
+    <![endif]-->
+    
+    <!-- 스타일 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    
+    <!-- jQuery 연결 -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-273681777"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109283150-1');
+    </script>
+    <link rel="stylesheet" href="common.css">
+    <style>
+    /* sub_common.css */
+    .vs { width: 100%; clear:both; padding-top:135px; }    
+    .vs img { display:block; width: 100%; }   
+    .bread { clear:both; width: 100%; height: 60px; }
+    .bread_fr { clear:both; width: 1440px; height: 60px; margin: 0 auto; margin-top: 8px; }    
+    .bread_fr li { float:left; position:relative; width: 200px; height: 46px; }
+    .bread_fr li:nth-child(2) { width: 155px; }    
+    .bread_fr li.home {  width:100px; } 
+    .bread_fr li.home:after { content:" > "; display:block; float:left; 
+        line-height:42px; padding-left:14px; font-size:28px; } 
+    .bread_fr li.home a { float:left; color:#000; }   
+    .bread_fr li a, .bread_fr li .cur { display:block; height: 46px; color:#333; line-height: 46px; cursor:pointer; } 
+        
+    .bread_fr li .bread_sel1 { width: 200px;  position:absolute; top: 0; left: 0; z-index:60; height: 48px; overflow:hidden; transition:0.5s;  }
+    .bread_fr li .bread_sel1.on { height: 240px; }    
+    .bread_fr li .bread_sel1:after { content:" > "; display:block; float:left; line-height:42px; padding-left: 28px; font-size:28px; position:absolute; right:25px; }    
+    .bread_fr li .bread_sel1 li { clear:both; width: 200px; height: 48px; } 
+    .bread_fr li .bread_sel1 li a { border-left:1px solid #000; border-right:1px solid #000; padding-left: 15px; width: 125px; background-color:#fff; color:#000; }    
+    .bread_fr li .bread_sel1 li:last-child a { border-bottom:1px solid #000;  }    
+    .bread_fr li .bread_sel1 li span.cur { border-top:1px solid #000; 
+        border-left:1px solid #000; border-right:1px solid #000; padding-left: 15px; width:125px; border-bottom:1px solid #000; background-color:#fff; line-height: 47px; height: 46px; color:#000; }
+    .bread_fr li .bread_sel1 li span.cur:after { content:"▼"; padding-left: 35px; color:#000; }
+    .bread_fr li .bread_sel1.on li span.cur:after { content:"▲"; color:#000; }
+    .bread_fr li .bread_sel2 { width: 200px;  position:absolute; top: 0; left: 0; z-index:60; height: 48px; overflow:hidden; transition:0.6s; padding-left: 30px; }
+    .bread_fr li .bread_sel2.on { height: 194px; }
+    .bread_fr li .bread_sel2 li { clear:both; width: 200px; height: 48px; } 
+    .bread_fr li .bread_sel2 li span.cur { border-top:1px solid #000; 
+        border-left:1px solid #000; border-right:1px solid #000; padding-left: 15px; border-bottom:1px solid #333; background-color:#fff; line-height: 46px; height: 46px; color:#000; }
+    .bread_fr li .bread_sel2 li span.cur:after { content:"▼"; padding-left: 65px; color:#000; }    
+    .bread_fr li .bread_sel2.on li span.cur:after { content:"▲"; color:#000; }        
+    .bread_fr li .bread_sel2 li a { border-left:1px solid #333; border-right:1px solid #333; padding-left: 15px; background-color:#fff; color:#000; }     
+    .bread_fr li .bread_sel2 li:last-child a { border-bottom:1px solid #333;  }
+    </style>
+    <style>
+    body, html { overflow-x:hidden; }
+    body { background-image: none; }    
+    .cate_tit1 { font-size:48px; padding-top: 0; line-height: 1.8; font-weight:300; } 
+    .cate_tit2 { font-size:32px; padding-top: 0; line-height: 1.6; font-weight: 300; }  
+    .bold_tit { font-weight: 600; } 
+    .center_tit { text-align: center; padding-top: 100px; }    
+    .cate_com { padding-top: 25px; font-size:18px; line-height:2; }    
+    .sub_img { clear:both; position:relative; width: 100%; }
+    .sub_img .pic { display:block; width: 100%; }    
+    .w1440_fr { width: 1600px; position:absolute; top: 0; left: 50%; 
+        margin-left: -720px; }    
+    .cate_tit_box { width: 50%; float:right; padding-top:150px; } 
+      
+    .page { clear: both; }    
+    .page_wrap { clear:both; padding-top: 140px; }    
+    .lst1 { width: 1140px; margin: 0 auto; position:relative; }
+    .lst1 li { clear:both; min-height:500px; width: 100%; position:relative; }    
+    .tit_box { position:absolute; top: 50px; padding-top:90px; }
+    .tit_box.right_item { right:0; } 
+    .tit_box .cate_head_fr { float:left; padding: 15px; }
+    .tit_box .cate_head_fr .cate_tit2:after { content:""; width:220px; 
+        height: 40px; display:block; float:right; border-bottom:2px solid #000; }
+    .tit_box .cate_com { float:left; padding: 15px; }    
+    .tit_box.left_item { left:0; }     
+    .lst1 li .img2 { display:block; float:right; } 
+        
+    .lst2 { width: 1440px; margin: 0 auto; }
+    .lst2 li { float:left; }
+    .lst2 li.col1 { width: 120px; }    
+    .lst2 li.col2 { width: 240px; }    
+    .lst2 li.col3 { width: 360px; }    
+    .lst2 li.col4 { width: 480px; }    
+    .lst2 li.col6 { width: 720px; }
+    .lst2 li.col8 { width: 960px; }    
+    .lst2 li.col12 { width: 1440px; }    
+    .lst2 li .circle_box { width: 400px; height: 400px;  margin: 0 auto; border:1px solid #ccc; border-radius:210px; 
+        text-align:center; }  
+    .circle_tit { padding-top:100px; line-height:1.3; font-size:34px;   } .circle_com { padding-top: 20px; }  
+    .pic_box { clear:both; width: 1440px; margin: 0 auto; padding-top: 100px; }
+    .pic_box .pic2 { display:block; width: 100%; }    
+    .lst2 .pic { display:block; width: 400px; margin:10px auto; }  
+        
+    #totop { position:fixed; right:40px; bottom:60px; width: 40px; height: 40px; z-index:100; }
+    #totop a { display:block; width: 40px; height: 40px; background-color:#000; text-align: center; line-height:40px; 
+        border-radius:22px;  color:#fff; }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="ck1" class="ck">
+        <input type="checkbox" id="ck2" class="ck">
+        <nav id="all_menu">
+            <ul class="menu_fr">
+                <li class="cate">
+                    <h2 class="cate_tit">CHANEL</h2>
+                    <ul class="dp2">
+                        <li><a href="chanel.html">Brand Story</a></li>
+                        <li><a href="">브레이슬릿</a></li>
+                        <li><a href="">네크리스</a></li>
+                        <li><a href="">이어링</a></li>
+                    </ul>
+                </li>
+                <li class="cate">
+                    <h2 class="cate_tit">컬렉션</h2>
+                    <ul class="dp2">
+                        <li class="dp2_tit">COCO CRUSH</li>
+                        <li><a href="">전체보기</a></li>
+                        <li><a href="">링</a></li>
+                        <li><a href="">브레이슬릿</a></li>
+                        <li><a href="">네크리스</a></li>
+                        <li><a href="">이어링</a></li>
+                    </ul>
+                    <ul class="dp2">
+                        <li class="dp2_tit">CAMÉLIA</li>
+                        <li><a href=".html">전체보기</a></li>
+                        <li><a href="">링</a></li>
+                        <li><a href="">브레이슬릿</a></li>
+                        <li><a href="">네크리스</a></li>
+                        <li><a href="">이어링</a></li>
+                        <li><a href="">브로치</a></li>
+                    </ul>
+                </li>
+                <li class="cate">
+                    <ul class="dp2">
+                        <li class="dp2_tit">ULTRA</li>
+                        <li><a href="">전체보기</a></li>
+                        <li><a href="">링</a></li>
+                        <li><a href="">브레이슬릿</a></li>
+                        <li><a href="">네크리스</a></li>
+                    </ul>
+                    <ul class="dp2">
+                        <li class="dp2_tit">RUBAN</li>
+                        <li><a href="">링</a></li>
+                        <li><a href="">브레이슬릿</a></li>
+                        <li><a href="">네크리스</a></li>
+                        <li><a href="">이어링</a></li>
+                    </ul>
+                </li>
+                <li class="cate">
+                    <h2 class="cate_tit">카테고리</h2>
+                    <ul class="dp2">
+                        <li class="dp2_tit">링</li>
+                        <li><a href="">전체보기</a></li>
+                        <li><a href="">COCO CRUSH</a></li>
+                        <li><a href="">CAMÉLIA</a></li>
+                        <li><a href="">ULTRA</a></li>
+                        <li><a href="">RUBAN</a></li>
+                    </ul>
+                    <ul class="dp2">
+                        <li class="dp2_tit">브레이슬릿</li>
+                        <li><a href=".html">전체보기</a></li>
+                        <li><a href="">COCO CRUSH</a></li>
+                        <li><a href="">CAMÉLIA</a></li>
+                        <li><a href="">ULTRA</a></li>
+                        <li><a href="">RUBAN</a></li>
+                    </ul>
+                </li>
+                <li class="cate">
+                    <ul class="dp2">
+                        <li class="dp2_tit">네크리스</li>
+                        <li><a href="">전체보기</a></li>
+                        <li><a href="">COCO CRUSH</a></li>
+                        <li><a href="">CAMÉLIA</a></li>
+                        <li><a href="">ULTRA</a></li>
+                        <li><a href="">RUBAN</a></li>
+                    </ul>
+                    <ul class="dp2">
+                        <li class="dp2_tit">이어링</li>
+                        <li><a href="">전체보기</a></li>
+                        <li><a href="">COCO CRUSH</a></li>
+                        <li><a href="">CAMÉLIA</a></li>
+                        <li><a href="">ULTRA</a></li>
+                        <li><a href="">RUBAN</a></li>
+                    </ul>
+                </li>
+                <li class="cate">
+                    <h2 class="cate_tit">EVENT</h2>
+                    <ul class="dp2">
+                        <li><a href="">진행중 이벤트</a></li>
+                        <li><a href="">지난 이벤트</a></li>
+                        <li><a href="">당첨자 발표</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="search_form">
+            <form action="" class="search_fr">
+                <fieldset>
+                    <input type="text" id="keywords" placeholder="COCO CRUSH">
+                    <input type="submit" id="search_btn">
+                </fieldset>
+                <div class="hash_fr">
+                    <h3 class="hash_tit">인기 검색어</h3>
+                    <a href="">COCO CRUSH</a>
+                    <a href="">CAMÉLIA</a>
+                    <a href="">ULTRA</a>
+                    <a href="">RUBAN</a>
+                    <a href="">링</a>
+                    <a href="">브레이슬릿</a>
+                    <a href="">네크리스</a>
+                    <a href="">이어링</a>
+                </div>
+            </form>
+        </div>
+        <header class="hd">
+            <div class="hd_wrap">
+                <ul class="top1">
+                    <li>
+                        <label for="ck1" class="menu_call_btn">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/lst02.png" alt="오시는길">
+                        </a>
+                    </li>
+                    <li>
+                        <label for="ck2" class="search_call_btn">
+                        검색
+                        </label>
+                    </li>
+                </ul>
+                <a href="" class="logo">
+                    <img src="./img/logo01.png" alt="샤넬로고"></a>
+                <div class="lang">
+                    <a href="index.html" class="cur_lang">KR</a>
+                    <a href="index.html">EN</a>
+                </div>
+            </div>
+            <nav class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="" class="dp1">CHANEL</a>
+                    </li>
+                    <li>
+                        <a href="coco.html" class="dp1">COCO CRUSH</a>
+                        <div class="sub item2">
+                            <ul>
+                                <li class="menu_tit"></li>
+                                <li><a href="" class="dp2">전체보기</a></li>
+                                <li><a href="" class="dp2">링</a></li>
+                                <li><a href="" class="dp2">브레이슬릿</a></li>
+                                <li><a href="" class="dp2">네크리스</a></li>
+                                <li><a href="" class="dp2">이어링</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="came.html" class="dp1">CAMÉLIA</a>
+                        <div class="sub item3">
+                            <ul>
+                                <li class="menu_tit"></li>
+                                <li><a href="" class="dp2">전체보기</a></li>
+                                <li><a href="" class="dp2">링</a></li>
+                                <li><a href="" class="dp2">브레이슬릿</a></li>
+                                <li><a href="" class="dp2">네크리스</a></li>
+                                <li><a href="" class="dp2">이어링</a></li>
+                                <li><a href="" class="dp2">브로치</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="ult.html" class="dp1">ULTRA</a>
+                        <div class="sub item4">
+                            <ul>
+                                <li class="menu_tit"></li>
+                                <li><a href="" class="dp2">전체보기</a></li>
+                                <li><a href="" class="dp2">링</a></li>
+                                <li><a href="" class="dp2">브레이슬릿</a></li>
+                                <li><a href="" class="dp2">네크리스</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="ruban.html" class="dp1">RUBAN</a>
+                        <div class="sub item5">
+                            <ul>
+                                <li class="menu_tit"></li>
+                                <li><a href="" class="dp2">전체보기</a></li>
+                                <li><a href="" class="dp2">링</a></li>
+                                <li><a href="" class="dp2">브레이슬릿</a></li>
+                                <li><a href="" class="dp2">네크리스</a></li>
+                                <li><a href="" class="dp2">이어링</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="event.html" class="dp1">EVENT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <figure class="vs" id="vs">
+                <img src="./img/nav_story.png" alt="샤넬">
+            </figure>
+            <div class="bread">
+                <ul class="bread_fr">
+                    <li class="home"><a href="">HOME</a></li>
+                    <li>
+                        <ul class="bread_sel1">
+                            <li>
+                                <span class="cur">CHANEL</span>
+                            </li>
+                            <li><a href="">COCO CRUSH</a></li>
+                            <li><a href="">CAMÉLIA</a></li>
+                            <li><a href="">ULTRA</a></li>
+                            <li><a href="">RUBAN</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="bread_sel2">
+                            <li><span class="cur">Brand Story</span></li>
+                            <li><a href="">COCO CRUSH</a></li>
+                            <li><a href="">CRUSH 이야기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <script>
+                $(document).ready(function(){
+                    $(".bread_sel1 .cur").click(function(){
+                        $(".bread_sel1").toggleClass("on");
+                    });
+                    $(".bread_sel2 .cur").click(function(){
+                        $(".bread_sel2").toggleClass("on");
+                    });
+                    $(".bread_sel2 li a").click(function(){
+                        $(".bread_sel2").removeClass("on");
+                    });
+                });
+                </script>
+            </div>
+            
+            
+        </div>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <ul class="ft_box">
+                    <li class="col1">
+                        <img src="./img/logo01_w.png" alt="하단로고">
+                    </li>
+                    <li class="col2">
+                        <p class="linkbar">
+                            <a href="">PARTNER ZONE</a>
+                            <a href="">이용약관</a>
+                            <a href="">개인정보처리방침</a>
+                        </p>
+                        <p class="adder">
+                            (주)샤넬 코리아<br>
+                            서울 중구 세종대로9길 41 퍼시픽타워<br>
+                            전화  |  02-3708-2700
+                        </p>
+                        <p class="copyright">COPYRIGHT © CHANEL&amp;. ALL RIGHT RESERVED.</p>
+                    </li>
+                    <li class="col3">
+                        <p class="sns_link">
+                            <a href="" class="utb_ico"></a>
+                                <a href="" class="insta_ico"></a>
+                                <a href="" class="face_ico"></a>
+                        </p>
+                        <select name="" id="sel">
+                            <option value="">Family Site</option>
+                            <option value="https://www.chanel.com/ko_KR/fashion/haute-couture.html">오뜨 꾸뛰르</option>
+                            <option value="https://www.chanel.com/ko_KR/fashion.html">패션</option>
+                            <option value="https://www.chanel.com/ko_KR/watches-jewelry/watches">시계</option>
+                        </select>
+                        <script>
+                        $(document).ready(function(){
+                            $("#sel").change(function(){
+                                var url = $(this).val();
+                                location.href = url;
+                            });
+                        });    
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
