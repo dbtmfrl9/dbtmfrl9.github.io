@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_55729" data-name="사각형 55729" width="200" height="200" transform="translate(1304 5917.142)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="facebook_wh" transform="translate(-1304 -5917.142)" clip-path="url(#clip-path)">
+    <path id="패스_567" data-name="패스 567" d="M-2150.857,408.683c0-55.606-44.806-100.683-100.071-100.683S-2351,353.077-2351,408.683c0,50.254,36.594,91.906,84.434,99.459V437.787h-25.407v-29.1h25.407V386.5c0-25.233,14.94-39.172,37.8-39.172a152.94,152.94,0,0,1,22.4,1.967v24.778h-12.618c-12.431,0-16.308,7.761-16.308,15.723v18.887h27.754l-4.437,29.1h-23.317v70.355C-2187.453,500.589-2150.857,458.937-2150.857,408.683Z" transform="translate(3655.002 5609)" fill="#fff"/>
+  </g>
+</svg>
